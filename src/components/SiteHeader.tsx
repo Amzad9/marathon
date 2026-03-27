@@ -1,0 +1,159 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+
+import { siteNav } from "./siteConfig";
+
+export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) {
+      return;
+    }
+
+    const { overflow } = document.body.style;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = overflow;
+    };
+  }, [isMobileMenuOpen]);
+
+  const closeMenu = () => setIsMobileMenuOpen(false);
+
+  return (
+    <>
+      <header className="fixed inset-x-0 top-0 z-30 px-4 pt-1 bg-[#232a33]">
+      <div className="container mx-auto flex items-center justify-between gap-4  px-3 py-1  sm:px-5">
+        <Link
+          href="/"
+          className="flex min-w-0 shrink-0 items-center"
+          aria-label="Run Like A Girl"
+        >
+          <div className="relative h-16 w-[120px] overflow-hidden rounded-md bg-transparent sm:h-20 sm:w-[210px] lg:w-[190px]">
+            <Image
+              src="/new/Run-Like-a-Girl-04-cropped.avif"
+              alt="Run Like A Girl logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          {/* <div className="min-w-0">
+            <h2 className="text-base font-black uppercase leading-none tracking-[0.04em] text-white sm:text-lg lg:text-xl">
+              <span className="block whitespace-nowrap">RUN LIKE A GIRL</span>
+            </h2>
+           
+          </div> */}
+        </Link>
+
+        <button
+          type="button"
+          onClick={() => setIsMobileMenuOpen(true)}
+          className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/10 p-3 text-white transition hover:bg-white/20 sm:hidden"
+          aria-label="Open navigation menu"
+          aria-expanded={isMobileMenuOpen}
+        >
+          <Menu className="h-5 w-5" strokeWidth={2.4} />
+        </button>
+
+        <nav className="hidden shrink-0 sm:block sm:w-auto" aria-label="Primary navigation">
+          <div className="flex flex-wrap items-center justify-end gap-2 xl:gap-7 text-[10px] font-black uppercase tracking-[0.04em] text-white md:text-[11px] lg:gap-5 lg:text-[12px] xl:text-[13px]">
+            {siteNav.map((item) => {
+              const isActive = item.label === activeLabel;
+              return (
+                <li key={item.href} className="cursor-pointer list-none">
+                  <Link
+                    href={item.href}
+                    className={[
+                      "transition hover:text-[#f0d07a]",
+                      isActive ? "text-[#f0d07a]" : "",  
+                    ].join(" ")}
+                    aria-current={isActive ? "page" : undefined}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+            <Link
+              href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-[#1f7f56] bg-[#1c9a64] px-3 py-2 text-[10px] text-[#f7d96f] shadow-[0_8px_20px_rgba(0,0,0,0.35)] transition hover:brightness-110 md:px-4 md:text-[11px] lg:px-5 lg:text-[12px]"
+            >
+              Register Here
+            </Link>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        className={[
+          "pointer-events-none fixed inset-0 z-40 bg-black/55 opacity-0 transition duration-300 sm:hidden",
+          isMobileMenuOpen ? "pointer-events-auto opacity-100" : "",
+        ].join(" ")}
+        onClick={closeMenu}
+        aria-hidden={!isMobileMenuOpen}
+      />
+
+      <div
+        className={[
+          "fixed right-0 top-0 z-50 h-full w-[84vw] max-w-sm border-l border-white/20 bg-[#1f252d] shadow-[-18px_0_45px_rgba(0,0,0,0.5)] transition-transform duration-300 ease-out sm:hidden",
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full",
+        ].join(" ")}
+        aria-hidden={!isMobileMenuOpen}
+      >
+        <div className="flex items-center justify-between border-b border-white/15 px-5 py-5">
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-white">Menu</p>
+          <button
+            type="button"
+            onClick={closeMenu}
+            className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/10 p-2 text-white transition hover:bg-white/20"
+            aria-label="Close navigation menu"
+          >
+            <X className="h-5 w-5" strokeWidth={2.4} />
+          </button>
+        </div>
+
+        <nav className="px-5 py-6" aria-label="Mobile navigation">
+          <ul className="space-y-2 text-base font-black uppercase tracking-[0.12em] text-white">
+            {siteNav.map((item) => {
+              const isActive = item.label === activeLabel;
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    onClick={closeMenu}
+                    className={[
+                      "block rounded-2xl border border-white/20 bg-white/5 px-4 py-4 transition hover:border-[#f0d07a]/45 hover:text-[#f0d07a]",
+                      isActive ? "border-[#f0d07a]/55 text-[#f0d07a]" : "",
+                    ].join(" ")}
+                    aria-current={isActive ? "page" : undefined}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+            <li>
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="block rounded-2xl border border-[#1f7f56] bg-[#1c9a64] px-4 py-4 text-[#f7d96f] transition hover:brightness-110"
+              >
+                Register Now
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+      <div aria-hidden className="h-[92px] sm:h-[108px]" />
+    </>
+  );
+}
