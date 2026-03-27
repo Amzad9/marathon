@@ -70,14 +70,14 @@ export default function Home() {
               </div>
 
               <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-[#83a73d]">
-                <iframe
-                  className="min-h-[240px] md:min-h-[480px] w-full"
-                  src="https://www.youtube.com/embed/VCWqDAj7lNU?si=W3pCGUsM7ftEH_GB&autoplay=1&mute=1&playsinline=1&loop=1&playlist=VCWqDAj7lNU"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
+                <video
+                  className="min-h-[240px] md:min-h-[480px] w-full object-cover"
+                  src="/Run%20Like%20a%20Girl%202.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
                 />
 
                 {/* <Image
