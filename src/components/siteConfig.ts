@@ -5,31 +5,29 @@ export type SiteNavItem = {
 
 export const siteNav: SiteNavItem[] = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Event Details", href: "/event-details" },
-  { label: "Our Beneficiary", href: "/our-beneficiary" },
-  { label: "Swag", href: "/swag" },
+  { label: "Events", href: "/events" },
+  { label: "Training", href: "/training" },
+  { label: "Easterseals", href: "/easterseals" },
   { label: "Sponsors", href: "/sponsors" },
-  { label: "Packet Pickup", href: "/packet-pickup" },
-  { label: "Questions", href: "/questions" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const siteContact = {
-  emailShowroom: "info@runlikeagirlOH.org",
-  emailOperations: "info@runlikeagirlOH.org",
-  phone: "(614) 555-RUNS",
-  phoneHref: "tel:+16145557867",
+  emailShowroom: "dphillips@easterseals-cseohio.org",
+  emailOperations: "dphillips@easterseals-cseohio.org",
+  phone: "(614) 332-5205",
+  phoneHref: "tel:+16143325205",
   addressLines: [
-    "Westerville Athletic Complex,",
-    "325 N. Cleveland Ave,",
-    "Westerville, OH 43081",
+    "The Shops on Lane Avenue,",
+    "1675 W. Lane Ave,",
+    "Columbus, OH 43221",
   ],
   directionsHref:
-    "https://www.google.com/maps/search/?api=1&query=325+N.+Cleveland+Ave,+Westerville,+OH+43081",
+    "https://www.google.com/maps/search/?api=1&query=1675+W+Lane+Ave,+Columbus,+OH+43221",
   businessHours: [
-    "Packet pickup - Saturday, Sept 20 | 10:00am to 1:00pm",
-    "Packet pickup - Saturday, Sept 27 | 10:00am to 1:00pm",
-    "Race day - Sunday, Oct 04 | Start 9:00am",
+    "CRC packet pickup - Mon, Nov 17 to Wed, Nov 26",
+    "Chase packet pickup - Tue, Nov 18 and Tue, Nov 25 | 4:00pm to 6:00pm",
+    "Shops on Lane pickup - Sun, Nov 23 | Noon to 3:00pm",
   ],
   socials: [
     {

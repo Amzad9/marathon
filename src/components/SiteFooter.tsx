@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 import { siteContact, siteNav } from "./siteConfig";
+import turkeyTrotLogo from "../app/assets/Turkey Trot 2026.png";
 
 const socialIcons = {
   facebook: Facebook,
@@ -18,8 +19,8 @@ export default function SiteFooter() {
           <div>
             <div className="relative h-36 w-auto overflow-hidden  bg-transparent p-1">
               <Image
-                src="/new/Run-Like-a-Girl-04-cropped.avif"
-                alt="Run Like A Girl logo"
+                src={turkeyTrotLogo}
+                alt="Turkey Trot logo"
                 fill
                 className="object-contain"
               />
@@ -42,7 +43,7 @@ export default function SiteFooter() {
             <ul className="mt-2 space-y-1 text-lg font-medium capitalize text-[#d7dee2] sm:text-md">
               {siteNav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition hover:text-[#f0d07a]">
+                  <Link href={item.href} className="transition hover:text-[#F7941E]">
                     {item.label}
                   </Link>
                 </li>
@@ -80,13 +81,13 @@ export default function SiteFooter() {
             <h4 className="text-xl font-black uppercase text-white">Contact</h4>
             <a
               href={`mailto:${siteContact.emailShowroom}`}
-              className="mt-3 block text-lg text-[#d7dee2] transition hover:text-[#f0d07a] sm:text-xl"
+              className="mt-3 block text-lg text-[#d7dee2] transition hover:text-[#F7941E] sm:text-xl"
             >
               {siteContact.emailShowroom}
             </a>
             <a
               href={siteContact.phoneHref}
-              className="mt-2 block text-lg text-[#d7dee2] transition hover:text-[#f0d07a] sm:text-xl"
+              className="mt-2 block text-lg text-[#d7dee2] transition hover:text-[#F7941E] sm:text-xl"
             >
               {siteContact.phone}
             </a>
@@ -95,7 +96,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10 bg-[#131920] py-4 text-center text-sm font-semibold text-[#c7d1d6]">
-        &copy; {new Date().getFullYear()} Run Like A Girl. All rights reserved.
+        &copy; {new Date().getFullYear()} Turkey Trot. All rights reserved.
       </div>
     </footer>
   );

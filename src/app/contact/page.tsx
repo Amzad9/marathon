@@ -6,8 +6,8 @@ import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Contact | Run Like A Girl",
-  description: "Contact Run Like A Girl for race registration questions and race day information.",
+  title: "Contact | Turkey Trot",
+  description: "Contact Turkey Trot for race registration questions and race day information.",
 };
 
 const contactOptions = [
@@ -35,9 +35,9 @@ const contactOptions = [
 ];
 
 const visitReasons = [
-  "Packet pickup recommended in advance",
-  "Race starts at 9:00 am on Sunday, Oct 04",
-  "Parking at Westerville Sports Complex and across the street",
+  "Advanced packet pickup available Nov 17 through Nov 26",
+  "Main race starts Thanksgiving morning with multiple event options",
+  "Submit your costume photo, name and costume description to trotcostume@gmail.com BEFORE RACE DAY (free to enter!)",
 ];
 
 export default function ContactPage() {
@@ -63,7 +63,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <a
               href={siteContact.phoneHref}
-              className="inline-flex w-full items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-7 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-auto sm:px-8 sm:text-base"
+              className="inline-flex w-full items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-7 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-auto sm:px-8 sm:text-base"
             >
               Call {siteContact.phone}
             </a>
@@ -74,7 +74,7 @@ export default function ContactPage() {
               Email Us
             </a>
             <Link
-              href="/services"
+              href="/training"
               className="inline-flex w-full items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/10 sm:w-auto sm:px-8 sm:text-base"
             >
               Event Details
@@ -92,7 +92,7 @@ export default function ContactPage() {
                 href={item.href}
                 className="rounded-2xl border border-white/15 bg-[#1e252d] p-6 shadow-[0_16px_34px_rgba(0,0,0,0.35)] transition hover:brightness-110"
               >
-                <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-[#f3d27d]">
+                <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
                   {item.icon}
                 </span>
                 <h2 className="mt-4 text-2xl font-black uppercase leading-tight tracking-tight text-white">
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 <p className="mt-3 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
                   {item.body}
                 </p>
-                <p className="mt-5 break-words whitespace-normal text-sm font-black uppercase tracking-[0.16em] text-[#f3d27d]">
+                <p className="mt-5 wrap-break-word whitespace-normal text-sm font-black uppercase tracking-[0.16em] text-[#F7941E]">
                   {item.value}
                 </p>
               </a>
@@ -117,7 +117,7 @@ export default function ContactPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/90">
                 Before Race Day
               </p>
-              <h2 className="mt-3 text-3xl font-black leading-[0.95] tracking-tight text-[#f3d27d] sm:text-4xl lg:text-5xl">
+              <h2 className="mt-3 text-3xl font-black leading-[0.95] tracking-tight text-[#F7941E] sm:text-4xl lg:text-5xl">
                 Packet Pickup & Tips
               </h2>
               <p className="mt-4 max-w-3xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
@@ -130,7 +130,7 @@ export default function ContactPage() {
                     key={reason}
                     className="flex items-start gap-3 rounded-2xl border border-white/15 bg-white/5 px-4 py-4"
                   >
-                    <span className="mt-0.5 rounded-full border border-white/15 bg-white/5 p-2 text-[#f3d27d]">
+                    <span className="mt-0.5 rounded-full border border-white/15 bg-white/5 p-2 text-[#F7941E]">
                       <Send className="h-4 w-4" strokeWidth={2.4} />
                     </span>
                     <p className="text-base leading-7 text-white/90">{reason}</p>
@@ -141,12 +141,12 @@ export default function ContactPage() {
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
                   href={`mailto:${siteContact.emailShowroom}`}
-                  className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-6 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:px-8 sm:text-base"
+                  className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-6 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:px-8 sm:text-base"
                 >
                   Email For Help
                 </a>
                 <Link
-                  href="/services"
+                  href="/training"
                   className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:px-8 sm:text-base"
                 >
                   View Event Details
@@ -157,7 +157,7 @@ export default function ContactPage() {
             <div className="space-y-6 lg:col-span-5">
               <div className="rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
                 <div className="flex items-start gap-3">
-                  <span className="rounded-full border border-white/15 bg-white/5 p-3 text-[#f3d27d]">
+                  <span className="rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
                     <MapPin className="h-5 w-5" strokeWidth={2.2} />
                   </span>
                   <div>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                       href={siteContact.directionsHref}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-5 inline-flex text-sm font-black uppercase tracking-[0.14em] text-[#f3d27d] transition hover:brightness-110"
+                      className="mt-5 inline-flex text-sm font-black uppercase tracking-[0.14em] text-[#F7941E] transition hover:brightness-110"
                     >
                       Get Directions
                     </a>
@@ -184,7 +184,7 @@ export default function ContactPage() {
 
               <div className="rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
                 <div className="flex items-start gap-3">
-                  <span className="rounded-full border border-white/15 bg-white/5 p-3 text-[#f3d27d]">
+                  <span className="rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
                     <Clock3 className="h-5 w-5" strokeWidth={2.2} />
                   </span>
                   <div className="w-full">

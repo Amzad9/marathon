@@ -38,7 +38,7 @@ export default function PageShell({ activeLabel, hero, children }: PageShellProp
                   </p>
                 ) : null}
 
-                <h1 className="mt-5 text-4xl md:text-5xl font-black uppercase leading-[0.92] tracking-[-0.02em] text-[#f3d27d]">
+                <h1 className="mt-5 text-4xl md:text-5xl font-black uppercase leading-[0.92] tracking-[-0.02em] text-[#F7941E]">
                   {hero.title}
                 </h1>
 
@@ -59,4 +59,3 @@ export default function PageShell({ activeLabel, hero, children }: PageShellProp
     </main>
   );
 }
-

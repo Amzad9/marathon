@@ -6,7 +6,7 @@ import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Questions | Run Like A Girl",
+  title: "Questions | Turkey Trot",
   description: "Get answers for registration, packet pickup, and race-day questions.",
 };
 
@@ -21,7 +21,15 @@ const faq = [
   },
   {
     question: "What time does the race start?",
-    answer: "Race day starts at 9:00 AM on Sunday, October 4, 2026.",
+    answer: "Tot Trot starts at 8:30 AM, the main race starts at 9:00 AM, and Walk N' Talk starts at 9:15 AM on Thanksgiving Day.",
+  },
+  {
+    question: "How do I enter the costume contest?",
+    answer: "Submit your costume photo, name, and costume description to trotcostume@gmail.com before race day.",
+  },
+  {
+    question: "How can I become a vendor or sponsor?",
+    answer: "Contact David Phillips at dphillips@easterseals-cseohio.org for vendor and sponsorship opportunities.",
   },
 ];
 
@@ -42,7 +50,7 @@ export default function QuestionsPage() {
             href={siteContact.phoneHref}
             className="rounded-2xl border border-white/15 bg-white/5 p-6 shadow-[0_14px_30px_rgba(0,0,0,0.20)] transition hover:bg-white/10"
           >
-            <Phone className="h-6 w-6 text-[#f3d27d]" strokeWidth={2.2} />
+            <Phone className="h-6 w-6 text-[#F7941E]" strokeWidth={2.2} />
             <h2 className="mt-4 text-xl font-black uppercase text-white">Call Us</h2>
             <p className="mt-2 text-white/85">{siteContact.phone}</p>
           </a>
@@ -50,15 +58,15 @@ export default function QuestionsPage() {
             href={`mailto:${siteContact.emailShowroom}`}
             className="rounded-2xl border border-white/15 bg-white/5 p-6 shadow-[0_14px_30px_rgba(0,0,0,0.20)] transition hover:bg-white/10"
           >
-            <Mail className="h-6 w-6 text-[#f3d27d]" strokeWidth={2.2} />
+            <Mail className="h-6 w-6 text-[#F7941E]" strokeWidth={2.2} />
             <h2 className="mt-4 text-xl font-black uppercase text-white">Email Us</h2>
             <p className="mt-2 text-white/85">{siteContact.emailShowroom}</p>
           </a>
           <Link
-            href="/event-details"
+            href="/events"
             className="rounded-2xl border border-white/15 bg-white/5 p-6 shadow-[0_14px_30px_rgba(0,0,0,0.20)] transition hover:bg-white/10"
           >
-            <MessageCircle className="h-6 w-6 text-[#f3d27d]" strokeWidth={2.2} />
+            <MessageCircle className="h-6 w-6 text-[#F7941E]" strokeWidth={2.2} />
             <h2 className="mt-4 text-xl font-black uppercase text-white">Event Info</h2>
             <p className="mt-2 text-white/85">See race details, distance options, and registration links.</p>
           </Link>
@@ -67,7 +75,7 @@ export default function QuestionsPage() {
 
       <section className="px-4 pb-12 sm:px-8 sm:pb-16">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
-          <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">FAQ</h3>
+          <h3 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-4xl">FAQ</h3>
           <div className="mt-6 grid gap-4">
             {faq.map((item) => (
               <article key={item.question} className="rounded-2xl border border-white/15 bg-white/5 p-5">

@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { siteNav } from "./siteConfig";
+import turkeyTrotLogo from "../app/assets/Turkey Trot 2026.png";
 
 export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,12 +33,12 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
         <Link
           href="/"
           className="flex min-w-0 shrink-0 items-center"
-          aria-label="Run Like A Girl"
+          aria-label="Turkey Trot"
         >
           <div className="relative h-16 w-[120px] overflow-hidden rounded-md bg-transparent sm:h-20 sm:w-[210px] lg:w-[190px]">
             <Image
-              src="/new/Run-Like-a-Girl-04-cropped.avif"
-              alt="Run Like A Girl logo"
+              src={turkeyTrotLogo}
+              alt="Turkey Trot logo"
               fill
               className="object-contain"
               priority
@@ -70,8 +71,8 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
                   <Link
                     href={item.href}
                     className={[
-                      "transition hover:text-[#f0d07a]",
-                      isActive ? "text-[#f0d07a]" : "",  
+                      "transition hover:text-[#F7941E]",
+                      isActive ? "text-[#F7941E]" : "",
                     ].join(" ")}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -81,10 +82,10 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
               );
             })}
             <Link
-              href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+              href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-[#1f7f56] bg-[#1c9a64] px-3 py-2 text-[10px] text-[#f7d96f] shadow-[0_8px_20px_rgba(0,0,0,0.35)] transition hover:brightness-110 md:px-4 md:text-[11px] lg:px-5 lg:text-[12px]"
+              className="rounded-full border border-[#1f7f56] bg-[#1c9a64] px-3 py-2 text-[10px] text-[#F7941E] shadow-[0_8px_20px_rgba(0,0,0,0.35)] transition hover:brightness-110 md:px-4 md:text-[11px] lg:px-5 lg:text-[12px]"
             >
               Register Here
             </Link>
@@ -130,8 +131,8 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
                     href={item.href}
                     onClick={closeMenu}
                     className={[
-                      "block rounded-2xl border border-white/20 bg-white/5 px-4 py-4 transition hover:border-[#f0d07a]/45 hover:text-[#f0d07a]",
-                      isActive ? "border-[#f0d07a]/55 text-[#f0d07a]" : "",
+                      "block rounded-2xl border border-white/20 bg-white/5 px-4 py-4 transition hover:border-[#F7941E]/45 hover:text-[#F7941E]",
+                      isActive ? "border-[#F7941E]/55 text-[#F7941E]" : "",
                     ].join(" ")}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -144,7 +145,7 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
               <Link
                 href="/contact"
                 onClick={closeMenu}
-                className="block rounded-2xl border border-[#1f7f56] bg-[#1c9a64] px-4 py-4 text-[#f7d96f] transition hover:brightness-110"
+                className="block rounded-2xl border border-[#1f7f56] bg-[#1c9a64] px-4 py-4 text-[#F7941E] transition hover:brightness-110"
               >
                 Register Now
               </Link>

@@ -5,60 +5,60 @@ import { ArrowRight, CalendarDays, Flag, MapPin, ShieldCheck, Trophy, Waves } fr
 import PageShell from "../../components/PageShell";
 
 export const metadata: Metadata = {
-  title: "Event Details | Run Like A Girl",
-  description: "Race details for the Run Like A Girl All-Women's Fall Classic.",
+  title: "Event Details | Turkey Trot",
+  description: "Race details for the Turkey Trot Thanksgiving Day events.",
 };
 
 const distances = [
   {
-    title: "Run Like A Girl 10-Mile",
-    miles: "10 miles",
-    startTime: "8:00 AM",
-    body: "Our premier long-distance challenge for runners building endurance and race-day confidence.",
+    title: "4-Mile Race",
+    miles: "4 miles",
+    startTime: "9:00 AM",
+    body: "New out-and-back course turning around near the historic Ohio State University Horseshoe.",
   },
   {
-    title: "Run Like A Girl 10K",
-    miles: "6.2 miles",
-    startTime: "8:15 AM",
-    body: "A balanced distance for athletes ready to step up from shorter races.",
+    title: "Walk N' Talk",
+    miles: "2.3 miles",
+    startTime: "9:15 AM",
+    body: "A casual route for walkers and families, including the OSU Waterman Agriculture and Natural Resource Complex.",
   },
   {
-    title: "Run Like A Girl 5K",
-    miles: "3.1 miles",
+    title: "Turkey Trot Tot Trot",
+    miles: "100 yards",
     startTime: "8:30 AM",
-    body: "A welcoming course for first-timers, walkers, and runners chasing a strong finish.",
+    body: "Fast and fun kids dash for participants ages 13 and under.",
   },
   {
-    title: "Run Like A Girl Community Mile",
-    miles: "1 mile",
-    startTime: "8:45 AM",
-    body: "A short, celebratory option for families and supporters who want to join race-day energy.",
+    title: "Turkey Trot Virtual Option",
+    miles: "Flexible",
+    startTime: "Thanksgiving Day",
+    body: "Complete your miles from anywhere and still be part of race-day impact.",
   },
 ];
 
 const eventFlow = [
   {
-    title: "Start Area Opens Early",
-    body: "Arrive with enough time to warm up, find your group, and settle in before the countdown.",
+    title: "40th Anniversary Year",
+    body: "Celebrate this milestone year with updated course options and race-day experiences.",
     icon: <Flag className="h-4 w-4" />,
   },
   {
-    title: "On-Course Support",
-    body: "Hydration and volunteer support are available on course to keep runners moving confidently.",
+    title: "Swag + Medal",
+    body: "This year includes a long sleeve 1/4 zip and custom finisher's medal.",
     icon: <Waves className="h-4 w-4" />,
   },
   {
-    title: "Strong Finish Experience",
-    body: "Cross the line, celebrate your effort, and enjoy post-race energy with the community.",
+    title: "Community Impact",
+    body: "Every registration supports Easterseals clients and Early Intervention students.",
     icon: <Trophy className="h-4 w-4" />,
   },
 ];
 
 const raceDayGuidelines = [
-  "Seed yourself at the start based on your expected pace and comfort level.",
-  "Runners and walkers are welcome across all listed distances.",
-  "If you are using a stroller, begin near the back for a safer start flow.",
+  "Please, no dogs allowed as a courtesy to other participants.",
   "Only registered participants may race with an assigned bib number.",
+  "Bring your bib and arrive early for smooth start-area flow.",
+  "Follow volunteer directions and posted race-day signage.",
 ];
 
 export default function EventDetailsPage() {
@@ -75,7 +75,7 @@ export default function EventDetailsPage() {
       <section className="px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8">
           <p className="text-base uppercase tracking-[0.08em] text-white/90 sm:text-xl">
-            Starting line for all events - Westerville Athletic Complex
+            Starting line for all events - The Shops on Lane Avenue, Columbus
           </p>
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">
@@ -95,10 +95,10 @@ export default function EventDetailsPage() {
                 </p>
                 <div className="mt-4">
                   <Link
-                    href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+                    href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-lg border border-[#1f7f56] bg-[#1c9a64] px-6 py-3 text-center text-lg font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110"
+                    className="inline-flex items-center justify-center rounded-lg border border-[#1f7f56] bg-[#1c9a64] px-6 py-3 text-center text-lg font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110"
                   >
                     Register Now
                   </Link>
@@ -111,7 +111,7 @@ export default function EventDetailsPage() {
 
       <section className="px-4 pb-12 sm:px-8 sm:pb-12">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
-          <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
+          <h3 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-4xl">
             Race At A Glance
           </h3>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -119,28 +119,28 @@ export default function EventDetailsPage() {
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <CalendarDays className="h-4 w-4" /> Date
               </p>
-              <p className="mt-2 text-lg text-white">Sunday, October 4, 2026</p>
+              <p className="mt-2 text-lg text-white">Thanksgiving Day 2026</p>
             </div>
             <div className="rounded-2xl border border-white/15 bg-white/5 p-4">
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <MapPin className="h-4 w-4" /> Location
               </p>
-              <p className="mt-2 text-lg text-white">Westerville Athletic Complex</p>
+              <p className="mt-2 text-lg text-white">The Shops on Lane Avenue, Columbus</p>
             </div>
             <div className="rounded-2xl border border-white/15 bg-white/5 p-4">
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <Trophy className="h-4 w-4" /> Start Time
               </p>
-              <p className="mt-2 text-lg text-white">9:00 AM</p>
+              <p className="mt-2 text-lg text-white">8:30 AM Tot Trot | 9:00 AM Main Race</p>
             </div>
           </div>
 
           <div className="mt-7">
             <Link
-              href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+              href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:text-base"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:text-base"
             >
               Click Here To Register
               <ArrowRight className="h-4 w-4" strokeWidth={2.6} />
@@ -151,7 +151,7 @@ export default function EventDetailsPage() {
 
       <section className="bg-[#1e252d] px-4 py-10 sm:px-8 sm:py-8">
         <div className="container mx-auto">
-          <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
+          <h3 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-4xl">
             Race Day Flow
           </h3>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -160,7 +160,7 @@ export default function EventDetailsPage() {
                 key={item.title}
                 className="rounded-2xl border border-white/15 bg-white/5 p-5 shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
               >
-                <p className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.12em] text-[#f3d27d]">
+                <p className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.12em] text-[#F7941E]">
                   {item.icon}
                   Event Flow
                 </p>
@@ -175,16 +175,16 @@ export default function EventDetailsPage() {
       <section className="px-4 pb-12 pt-10 sm:px-8 sm:pb-16 sm:pt-8">
         <div className="container mx-auto grid gap-6 lg:grid-cols-12">
           <div className="rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8 lg:col-span-7">
-            <h3 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
+            <h3 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-4xl">
               Pace And Corrals
             </h3>
             <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Line up where you feel most comfortable. Starting with runners near your pace keeps
-              the opening miles safer and smoother for everyone.
+              The 4-mile race uses a new out-and-back route. Walk N&apos; Talk participants follow a
+              shorter course made for casual runners and walkers.
             </p>
             <p className="mt-3 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-              If your training progress changes your expected finish time, adjust your starting
-              strategy on race morning and choose the group that fits your effort level.
+              Review the course maps before race day and choose the option that best matches your
+              goals.
             </p>
           </div>
 
@@ -201,7 +201,7 @@ export default function EventDetailsPage() {
               ))}
             </ul>
             <p className="mt-5 flex items-center gap-2 text-sm font-semibold text-white/85">
-              <ShieldCheck className="h-4 w-4 text-[#f3d27d]" />
+              <ShieldCheck className="h-4 w-4 text-[#F7941E]" />
               Follow volunteer direction and official signage throughout race morning.
             </p>
           </div>

@@ -6,7 +6,7 @@ import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Race Day | Run Like A Girl",
+  title: "Race Day | Turkey Trot",
   description: "Race day guide: what to expect, where to park, and key tips for a smooth morning.",
 };
 
@@ -18,7 +18,7 @@ const faq = [
   },
   {
     title: "Where do I park?",
-    body: "Parking is available at Westerville Sports Complex with overflow across the street. No grass parking; towing enforced.",
+    body: "Parking is available around The Shops on Lane Avenue. Follow event signage and volunteer direction.",
     icon: <MapPin className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
@@ -54,7 +54,7 @@ export default function RaceDayPage() {
       <section className="px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto grid gap-6 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-5xl">
+            <h2 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-5xl">
               Quick Checklist
             </h2>
             <ul className="mt-6 space-y-3 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
@@ -62,10 +62,10 @@ export default function RaceDayPage() {
                 <span className="font-black text-white">Packet pickup:</span> Advance pickup recommended (friends/family can pick up for you).
               </li>
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
-                <span className="font-black text-white">Start time:</span> 9:00 am on Sunday, October 4, 2026.
+                <span className="font-black text-white">Start time:</span> 8:30 AM Tot Trot | 9:00 AM Main Race.
               </li>
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
-                <span className="font-black text-white">Location:</span> Westerville Athletic Complex.
+                <span className="font-black text-white">Location:</span> The Shops on Lane Avenue, Columbus.
               </li>
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
                 <span className="font-black text-white">Parking:</span> Sports Complex + overflow across the street.
@@ -75,12 +75,12 @@ export default function RaceDayPage() {
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
+                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
               >
                 Ask A Question
               </Link>
               <Link
-                href="/services"
+                href="/training"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:text-base"
               >
                 View Distances
@@ -103,7 +103,7 @@ export default function RaceDayPage() {
                 href={siteContact.directionsHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex text-sm font-black uppercase tracking-[0.14em] text-[#f3d27d] transition hover:brightness-110"
+                className="mt-6 inline-flex text-sm font-black uppercase tracking-[0.14em] text-[#F7941E] transition hover:brightness-110"
               >
                 Open Maps
               </a>
@@ -111,7 +111,7 @@ export default function RaceDayPage() {
                 Questions about volunteering, sponsors, or accessibility? Email us at{" "}
                 <a
                   href={`mailto:${siteContact.emailShowroom}`}
-                  className="font-semibold text-white underline decoration-white/25 underline-offset-4 transition hover:text-[#f3d27d]"
+                  className="font-semibold text-white underline decoration-white/25 underline-offset-4 transition hover:text-[#F7941E]"
                 >
                   {siteContact.emailShowroom}
                 </a>
@@ -124,7 +124,7 @@ export default function RaceDayPage() {
 
       <section className="bg-[#1e252d] px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-5xl">
+          <h2 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-5xl">
             Frequently Asked
           </h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
@@ -133,7 +133,7 @@ export default function RaceDayPage() {
                 key={item.title}
                 className="rounded-2xl border border-white/15 bg-white/5 p-6 shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
               >
-                <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-[#f3d27d]">
+                <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
                   {item.icon}
                 </span>
                 <h3 className="mt-4 text-2xl font-black uppercase tracking-tight text-white">
@@ -150,4 +150,3 @@ export default function RaceDayPage() {
     </PageShell>
   );
 }
-

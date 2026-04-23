@@ -1,22 +1,21 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 import PageShell from "../../components/PageShell";
 
 export const metadata: Metadata = {
-  title: "Our Beneficiary | Run Like A Girl",
-  description: "Meet Girls on the Run Central Ohio, our beneficiary partner.",
+  title: "Our Beneficiary | Turkey Trot",
+  description: "Meet Easterseals of Central and Southeast Ohio, our beneficiary partner.",
 };
 
 export default function OurBeneficiaryPage() {
   return (
     <PageShell
-      activeLabel="Our Beneficiary (Girls on the Run)"
+      activeLabel="Our Beneficiary"
       hero={{
         eyebrow: "Our Beneficiary",
-        title: "Girls on the Run Central Ohio",
-        subtitle: "A mission-driven partner helping girls build confidence, joy, and lifelong healthy habits.",
+        title: "Easterseals Central & Southeast Ohio",
+        subtitle: "Early Intervention support that helps children reach their full potential regardless of challenges, needs, or disabilities.",
         imageUrl: "https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg",
       }}
     >
@@ -24,31 +23,30 @@ export default function OurBeneficiaryPage() {
 
       <section className="px-4 pb-10 sm:px-8 sm:pb-14 my-2">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-4xl">
+          <h2 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-4xl">
             How Your Support Helps
           </h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <article className="rounded-2xl border border-white/15 bg-white/5 p-5">
               <h3 className="text-xl font-black uppercase text-white">Curriculum Delivery</h3>
               <p className="mt-2 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-                Funds help deliver lessons that combine movement with confidence-building and life
-                skills for girls in grades 3-8.
+                Funds support hands-on Early Intervention services for children and their families.
               </p>
             </article>
             <article className="rounded-2xl border border-white/15 bg-white/5 p-5">
               <h3 className="text-xl font-black uppercase text-white">Community Access</h3>
               <p className="mt-2 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-                Proceeds support program access for more families across Central Ohio so more girls
-                can participate and thrive.
+                Your support brings joy and hope to local children by expanding access to therapy and
+                developmental resources.
               </p>
             </article>
           </div>
           <div className="mt-6">
             <Link
-              href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+              href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:text-base"
+              className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:text-base"
             >
               Click Here To Register
             </Link>
@@ -58,22 +56,22 @@ export default function OurBeneficiaryPage() {
 
       <section className="bg-[#1e252d] px-4 py-10 sm:px-8 sm:py-12">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-5xl">
+          <h2 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-5xl">
             Why This Partnership Matters
           </h2>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             {[
               {
                 title: "Healthy Habits",
-                body: "Girls build lifelong wellness routines through movement, teamwork, and encouragement.",
+                body: "Early support gives children a stronger start during critical developmental years.",
               },
               {
                 title: "Confidence & Joy",
-                body: "Participants develop confidence and a positive self-image in a safe, supportive environment.",
+                body: "Families receive compassionate guidance, tools, and care through every stage.",
               },
               {
                 title: "Community Impact",
-                body: "Every registration helps strengthen programs that serve girls and families in Central Ohio.",
+                body: "Every registration helps strengthen Easterseals programs across Central and Southeast Ohio.",
               },
             ].map((item) => (
               <article
@@ -98,7 +96,7 @@ export default function OurBeneficiaryPage() {
           </h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <Link
-              href="/event-details"
+              href="/events"
               className="rounded-2xl border border-white/20 bg-white/5 px-5 py-4 text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/10"
             >
               Event Details

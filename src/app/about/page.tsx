@@ -6,8 +6,8 @@ import { Heart, Sparkles, Users } from "lucide-react";
 import PageShell from "../../components/PageShell";
 
 export const metadata: Metadata = {
-  title: "About | Run Like A Girl",
-  description: "Learn about Run Like A Girl and the All-Women’s Fall Classic in Westerville, Ohio.",
+  title: "About | Turkey Trot",
+  description: "Learn about the Turkey Trot in Columbus, Ohio.",
 };
 
 const values = [
@@ -18,7 +18,7 @@ const values = [
   },
   {
     title: "Celebrate Every Finish",
-    body: "Whether it’s your first 5K or your fastest 10-Mile, we celebrate the work you put in.",
+    body: "Whether it’s your first Turkey Trot or your fastest finish, we celebrate the work you put in.",
     icon: <Sparkles className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
@@ -36,9 +36,9 @@ export default function AboutPage() {
         eyebrow: "About",
         title: (
           <>
-            Run Like A Girl
+            Turkey Trot
             <br />
-            All-Women’s Fall Classic
+            Thanksgiving Day Tradition
           </>
         ),
         subtitle:
@@ -49,28 +49,27 @@ export default function AboutPage() {
       <section id="mission" className="px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto grid gap-6 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-5xl">
+            <h2 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-5xl">
               Our Mission
             </h2>
             <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
-              Girls on the Run Central Ohio&apos;s mission is to inspire girls to be healthy,
-              confident, and joyful, using an experience-based curriculum that integrates running.
-              The program, designed for girls in grades 3-8, focuses on social, emotional, and
-              physical skills, empowering them to activate their limitless potential.
+              We are proud to support Easterseals of Central and Southeast Ohio through the Columbus
+              Turkey Trot. Event proceeds help fund Early Intervention services that provide hands-on
+              support for children and families.
             </p>
            
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
-                href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+                href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
+                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
               >
                 Click Here To Register
               </Link>
               <Link
-                href="/services"
+                href="/training"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:text-base"
               >
                 View Event Details
@@ -94,7 +93,44 @@ export default function AboutPage() {
 
       <section className="bg-[#1e252d] px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-black uppercase tracking-tight text-[#f3d27d] sm:text-5xl">
+          <div className="rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8">
+            <h2 className="text-3xl font-black tracking-tight text-[#F7941E] sm:text-4xl">
+              Thaniel&apos;s Story
+            </h2>
+            <p className="mt-3 text-lg font-semibold text-white/95 sm:text-xl">
+              EasterSeals has changed our lives.
+            </p>
+            <p className="mt-6 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+              Thaniel was born with a heart defect and was in the cardiac ICU for about 6 weeks after
+              birth. He endured 2 open heart surgeries and 3 heart catheterizations before his second
+              birthday. He struggles eating and gaining weight and was also diagnosed with autism.
+            </p>
+            <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+              When EasterSeals was presented as an option for Early Intervention, I jumped on the
+              opportunity to get him enrolled. He began classes at only 16 months and continued until
+              his third birthday. When we went for our initial meeting with his teacher, I knew he was
+              in the right place.
+            </p>
+            <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+              The teachers, therapists, staff, and everyone we met at EasterSeals were compassionate,
+              patient, caring, and supportive. They went above and beyond to ensure his experience was
+              positive every day. I know he enjoyed spending time painting, sorting, running, coloring,
+              singing, and dancing, but most of all, Thaniel loved playing with Tank, the facility&apos;s
+              therapy dog.
+            </p>
+            <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+              During his time at EasterSeals, Thaniel grew in so many ways. He advanced not only
+              developmentally, but socially as well. He was encouraged to explore new ideas, spread
+              kindness, and celebrate being himself. EasterSeals laid the foundation of success for
+              Thaniel&apos;s educational future.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#1e252d] px-4 py-10 sm:px-8 sm:py-14">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-5xl">
             What You Can Expect
           </h2>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
@@ -103,7 +139,7 @@ export default function AboutPage() {
                 key={item.title}
                 className="rounded-2xl border border-white/15 bg-white/5 p-6 shadow-[0_14px_30px_rgba(0,0,0,0.20)]"
               >
-                <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-[#f3d27d]">
+                <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
                   {item.icon}
                 </span>
                 <h3 className="mt-4 text-2xl font-black uppercase tracking-tight text-white">
@@ -133,7 +169,7 @@ export default function AboutPage() {
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
+                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
               >
                 Get In Touch
               </Link>
@@ -150,4 +186,3 @@ export default function AboutPage() {
     </PageShell>
   );
 }
-
