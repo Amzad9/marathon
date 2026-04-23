@@ -4,20 +4,22 @@ import { Star } from "lucide-react";
 
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
+import blueshirtImage from "./assets/Blueshirt_edited.avif";
+import inflatableTurkeyImage from "./assets/InflatableTT.avif";
 const testimonials = [
   {
-    name: "Chloe L.",
-    message: "The sense of community was amazing! So supportive for my first 5K.",
+    name: "Family Team",
+    message: "The Thanksgiving morning energy is unmatched and perfect for all ages.",
     image: "/images/test1.png",
   },
   {
-    name: "Maria R.",
-    message: "Completing the 10-Mile was a proud moment. A well-organized, friendly competition.",
+    name: "5-Miler Runner",
+    message: "Great organization, great crowd support, and a fun way to start the holiday.",
     image: "/images/test2.png",
   },
   {
-    name: "Janet P.",
-    message: "Loved the non-profit focus and the custom medal is beautiful!",
+    name: "Walk N' Talk Participant",
+    message: "Loved the shirt, medal, and community impact through Easterseals support.",
     image: "/images/test3.png",
   },
 ];
@@ -45,26 +47,33 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="relative z-10 grid gap-6 lg:grid-cols-2 lg:items-center">
               <div className="max-w-7xl">
-                <h1 className="text-4xl md:text-5xl font-black uppercase leading-[0.92] text-[#f3d27d]">
-                 Run Like A Girl 5K 10K 10-Mile
+                <h1 className="text-4xl md:text-5xl font-black uppercase leading-[0.92] text-[#F7941E]">
+                  The Original Columbus Turkey Trot
                 </h1>
               
-                <p className="mt-3 text-2xl font-semibold text-[#f3d27d] sm:text-4xl">
-                  Westerville, Ohio | 10/04/2026
+                <p className="mt-3 text-2xl font-semibold text-[#F7941E] sm:text-4xl">
+                  Thanksgiving Day | 11/27/2025
                 </p>
                 <p className="mt-5 max-w-4xl text-lg leading-9 text-white/95 sm:text-2xl sm:leading-[1.3]">
-                  Join us for an empowering all-women’s running event that unites the Central Ohio
-                  running community. With options for a 5K, 10K, and 10-Mile, there’s something for
-                  everyone, from elite runners to weekend warriors and first-timers.
+                  Join us in celebrating our 40th Year Anniversary with exciting changes to the 2026
+                  Chase Columbus Turkey Trot, benefiting Easterseals of Central and Southeast Ohio.
+                  Your support makes a meaningful impact for children and families served through Early
+                  Intervention programs.
                 </p>
-                <div className="mt-7">
+                <div className="mt-7 flex flex-wrap gap-3">
                   <Link
-                    href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+                    href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-10 py-4 text-md md:text-xl font-black uppercase tracking-[0.05em] text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110"
+                    className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-10 py-4 text-md md:text-xl font-black uppercase tracking-[0.05em] text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110"
                   >
-                    Click Here To Register
+                    Click To Sign Up
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="inline-flex rounded-full border border-white/20 bg-white/10 px-10 py-4 text-md md:text-xl font-black uppercase tracking-[0.05em] text-white transition hover:bg-white/15"
+                  >
+                    Click To Volunteer
                   </Link>
                 </div>
               </div>
@@ -72,7 +81,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-[#83a73d]">
                 <video
                   className="min-h-[240px] md:min-h-[480px] w-full object-cover"
-                  src="/Run%20Like%20a%20Girl%202.mp4"
+                  src="/TurkeyTrot2026Animation.mp4"
                   autoPlay
                   muted
                   loop
@@ -95,16 +104,16 @@ export default function Home() {
           <div className="container mx-auto grid gap-4 md:grid-cols-3">
             {[
               {
-                title: "Finisher Swag",
-                body: "Receive a beautiful running shirt and a custom medal with a ribbon.",
+                title: "What&apos;s New In &apos;26",
+                body: "New out-and-back 4-mile route turning around in front of the historic Ohio State Horseshoe.",
               },
               {
-                title: "Solidarity & Support",
-                body: "An environment to support each other and celebrate your achievements.",
+                title: "Walk N&apos; Talk Route",
+                body: "A casual route for friends and families, including the OSU Waterman Agriculture and Natural Resource Complex.",
               },
               {
-                title: "Non-Profit Partner",
-                body: "Your participation helps a local non-profit. Proceeds benefit a great cause.",
+                title: "Swag + Medal",
+                body: "Check out this year&apos;s long sleeve 1/4 zip and custom finisher&apos;s medal.",
               },
             ].map((item) => (
               <article key={item.title} className="rounded-2xl border border-white/12 bg-white/5 p-4">
@@ -126,21 +135,21 @@ export default function Home() {
               />
             </div>
             <div>
-              <h2 className="md:text-4xl font-black uppercase leading-none text-[#f3d27d] text-2xl">
+              <h2 className="md:text-4xl font-black uppercase leading-none text-[#F7941E] text-2xl">
                 Featured Event Details
               </h2>
               <ul className="mt-5 space-y-4 text-2xl leading-tight text-white/95 sm:text-2xl">
                 <li>
-                  <span className="font-semibold">Choose your challenge:</span> Distances are 5K, 10K,
-                  and 10-Mile.
+                  <span className="font-semibold">Course update:</span> Our 4-mile route features an
+                  out-and-back design with a turnaround near the OSU Horseshoe.
                 </li>
                 <li>
-                  <span className="font-semibold">Empowerment:</span> Create shared experiences and find
-                  inspiration.
+                  <span className="font-semibold">Walk N&apos; Talk:</span> A 2.3-mile option for casual
+                  runners and walkers to enjoy Thanksgiving morning together.
                 </li>
                 <li>
-                  <span className="font-semibold">Proceeds Benefit:</span> Participation raises awareness
-                  and funds for a local charity.
+                  <span className="font-semibold">Important note:</span> Please, no dogs allowed as a
+                  courtesy to other participants.
                 </li>
               </ul>
             </div>
@@ -163,7 +172,7 @@ export default function Home() {
                     <Image src={item.image} alt={item.name} fill className="object-cover" />
                   </div>
                   <div>
-                    <div className="mb-2 flex items-center gap-1 text-[#f3d27d]">
+                    <div className="mb-2 flex items-center gap-1 text-[#F7941E]">
                       {Array.from({ length: 5 }).map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-current" />
                       ))}
@@ -177,6 +186,56 @@ export default function Home() {
             </div>
         </section>
 
+        <section className="bg-[#1e252d] px-4 pb-8 sm:px-8">
+          <div className="container mx-auto">
+            <div className="grid gap-6 lg:grid-cols-2">
+              <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-black/20">
+                <Image
+                  src={blueshirtImage}
+                  alt="Race participant in event shirt"
+                  className="h-full w-full object-cover"
+                  priority={false}
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-black/20">
+                <Image
+                  src={inflatableTurkeyImage}
+                  alt="Inflatable turkey at the event"
+                  className="h-full w-full object-cover"
+                  priority={false}
+                />
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href="https://www.mapmyrun.com/routes/view/6668224116"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
+              >
+                4-Mile Map
+              </a>
+              <a
+                href="https://www.mapmyrun.com/routes/view/add_to_website/6668240239"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:text-base"
+              >
+                2.5-Mile “Walk N’ Talk” Map
+              </a>
+              <a
+                href="https://www.facebook.com/ColumbusTurkeyTrot/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/10 sm:w-fit sm:text-base"
+              >
+                Click to Stay Up-To-Date
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section id="projects" className="mt-0 bg-[#1e252d] px-4 py-6 sm:px-8">
           <div className="container mx-auto grid gap-6 lg:grid-cols-[0.5fr_1fr]">
             <div className="relative min-h-[250px] overflow-hidden rounded-3xl border border-white/15">
@@ -188,33 +247,31 @@ export default function Home() {
               />
             </div>
             <div>
-                <h3 className="md:text-4xl font-black uppercase leading-none text-[#f3d27d] text-2xl">
-                A Message From Our Event Director
+                <h3 className="md:text-4xl font-black uppercase leading-none text-[#F7941E] text-2xl">
+                A Message From The Event Team
               </h3>
               <p className="mt-4 max-w-6xl text-xl leading-8 text-white/95 sm:text-2xl sm:leading-[1.3]">
-                On behalf of the running and fitness community of Central Ohio, we are proud to
-                present an all-female program created to inspire and empower women of all ages and
-                fitness levels.
+                Your money goes to Easterseals&apos; Early Intervention students who need you. The Chase
+                Columbus Turkey Trot proudly supports Easterseals of Central &amp; Southeast Ohio.
               </p>
               <p className="mt-3 max-w-6xl text-xl leading-8 text-white/95 sm:text-2xl sm:leading-[1.3]">
-                Our mission is to help women achieve their fitness goals in a fun, supportive, and
-                motivating environment.
+                Their program provides hands-on, comprehensive support to help children reach their
+                full potential, regardless of challenges, needs, or disabilities.
               </p>
               <p className="mt-3 max-w-6xl text-xl leading-8 text-white/95 sm:text-2xl sm:leading-[1.3]">
-                Whether you&apos;re a first-time participant or a seasoned runner, this program offers
-                the perfect opportunity to train, connect, and grow. It&apos;s also an excellent
-                preparation for fall marathons and other distance events.
+                Extra ways to give thanks include our canned food drive on race morning near the pickup
+                tent. Donate unexpired cans and non-perishable food items.
               </p>
-              <p className="mt-5 text-2xl text-white sm:text-3xl">Jeff Sheard - Race Director</p>
-              <p className="mt-1 text-xl text-white/90 sm:text-2xl">Jeff S</p>
+              <p className="mt-5 text-2xl text-white sm:text-3xl">Race Day Hotline: 614-332-5205</p>
+              <p className="mt-1 text-xl text-white/90 sm:text-2xl">kara@ultrafitusa.com</p>
               <div className="mt-6">
                 <Link
-                  href="https://runsignup.com/Race/OH/Westerville/RunLikeAGirl5KAnd10K"
+                  href="https://www.columbusturkeytrot.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-xl font-black uppercase tracking-[0.05em] text-[#f7d96f] transition hover:brightness-110"
+                  className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-xl font-black uppercase tracking-[0.05em] text-[#F7941E] transition hover:brightness-110"
                 >
-                  Click Here To Register
+                  Visit Event Website
                 </Link>
               </div>
             </div>
@@ -226,18 +283,17 @@ export default function Home() {
               <div className="relative h-28 w-28 overflow-hidden rounded-xl border border-white/20">
                 <Image
                   src="/new/Run-Like-a-Girl-04.avif"
-                  alt="Run Like A Girl logo"
+                  alt="Turkey Trot logo"
                   fill
                   className="object-cover"
                 />
               </div>
               <div id="contact">
                 <h3 className="text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">
-                  Westerville Athletic Complex
+                  The Shops on Lane Avenue
                 </h3>
                 <p className="mt-1 max-w-7xl text-base leading-7 text-white/85 sm:text-lg sm:leading-8 lg:text-2xl">
-                  325 N. Cleveland Ave, Westerville, OH 43081 | Race starts at 9:00 am on
-                  10/04/2026.
+                  1675 W. Lane Ave, Columbus, OH 43221 | Thanksgiving Day start times begin at 8:30 am.
                 </p>
               </div>
             </div>

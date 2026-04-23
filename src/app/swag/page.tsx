@@ -4,8 +4,8 @@ import Image from "next/image";
 import PageShell from "../../components/PageShell";
 
 export const metadata: Metadata = {
-  title: "Swag | Run Like A Girl",
-  description: "See what race-day swag you'll receive at Run Like A Girl.",
+  title: "Swag | Turkey Trot",
+  description: "See what race-day swag you'll receive at Turkey Trot.",
 };
 
 const swagItems = [
