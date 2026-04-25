@@ -38,7 +38,7 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
           <div className="flex flex-col items-start">
             <div className="relative h-16 w-[120px] overflow-hidden rounded-md bg-transparent sm:h-20 sm:w-[210px] lg:w-[190px]">
               <Image
-                src="/new/TurkeyTrot2026.png"
+                src="/logo.jpg"
                 alt="Columbus Turkey Trot logo"
                 fill
                 className="object-contain"

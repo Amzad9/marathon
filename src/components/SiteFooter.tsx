@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 import { siteContact, siteNav } from "./siteConfig";
-import turkeyTrotLogo from "../app/assets/Turkey Trot 2026.png";
+
 
 const socialIcons = {
   facebook: Facebook,
@@ -19,7 +19,7 @@ export default function SiteFooter() {
           <div>
             <div className="relative h-36 w-auto overflow-hidden  bg-transparent p-1">
               <Image
-                src={turkeyTrotLogo}
+                src="/logo.jpg"
                 alt="Turkey Trot logo"
                 fill
                 className="object-contain"
