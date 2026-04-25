@@ -65,11 +65,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <a
               href={siteContact.phoneHref}
-<<<<<<< HEAD
-              className="inline-flex w-full items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-7 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-auto sm:px-8 sm:text-base"
-=======
               className="inline-flex w-full items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-7 py-3 text-center text-sm font-black uppercase tracking-wide text-primary shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-auto sm:px-8 sm:text-base"
->>>>>>> ad3887c (ui changes)
             >
               Call {siteContact.phone}
             </a>
@@ -98,11 +94,7 @@ export default function ContactPage() {
                 href={item.href}
                 className="rounded-2xl border border-white/15 bg-[#1e252d] p-6 shadow-[0_16px_34px_rgba(0,0,0,0.35)] transition hover:brightness-110"
               >
-<<<<<<< HEAD
-                <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
-=======
                 <span className="inline-flex rounded-full border border-white/15 bg-white/5 p-3 text-primary">
->>>>>>> ad3887c (ui changes)
                   {item.icon}
                 </span>
                 <h2 className="mt-4 text-2xl font-black uppercase leading-tight tracking-tight text-white">
@@ -111,11 +103,7 @@ export default function ContactPage() {
                 <p className="mt-3 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
                   {item.body}
                 </p>
-<<<<<<< HEAD
-                <p className="mt-5 wrap-break-word whitespace-normal text-sm font-black uppercase tracking-[0.16em] text-[#F7941E]">
-=======
                 <p className="mt-5 wrap-break-word whitespace-normal text-sm font-black uppercase tracking-[0.16em] text-primary">
->>>>>>> ad3887c (ui changes)
                   {item.value}
                 </p>
               </a>
@@ -131,11 +119,7 @@ export default function ContactPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/90">
                 Before Race Day
               </p>
-<<<<<<< HEAD
-              <h2 className="mt-3 text-3xl font-black leading-[0.95] tracking-tight text-[#F7941E] sm:text-4xl lg:text-5xl">
-=======
               <h2 className="mt-3 text-3xl font-black leading-[0.95] tracking-tight text-primary sm:text-4xl lg:text-5xl">
->>>>>>> ad3887c (ui changes)
                 Packet Pickup & Tips
               </h2>
               <p className="mt-4 max-w-3xl text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
@@ -148,11 +132,7 @@ export default function ContactPage() {
                     key={reason}
                     className="flex items-start gap-3 rounded-2xl border border-white/15 bg-white/5 px-4 py-4"
                   >
-<<<<<<< HEAD
-                    <span className="mt-0.5 rounded-full border border-white/15 bg-white/5 p-2 text-[#F7941E]">
-=======
                     <span className="mt-0.5 rounded-full border border-white/15 bg-white/5 p-2 text-primary">
->>>>>>> ad3887c (ui changes)
                       <Send className="h-4 w-4" strokeWidth={2.4} />
                     </span>
                     <p className="text-base leading-7 text-white/90">{reason}</p>
@@ -163,11 +143,7 @@ export default function ContactPage() {
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
                   href={`mailto:${siteContact.emailShowroom}`}
-<<<<<<< HEAD
-                  className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-6 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:px-8 sm:text-base"
-=======
                   className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-6 py-3 text-center text-sm font-black uppercase tracking-wide text-primary shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:px-8 sm:text-base"
->>>>>>> ad3887c (ui changes)
                 >
                   Email For Help
                 </a>
@@ -183,11 +159,7 @@ export default function ContactPage() {
             <div className="space-y-6 lg:col-span-5">
               <div className="rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
                 <div className="flex items-start gap-3">
-<<<<<<< HEAD
-                  <span className="rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
-=======
                   <span className="rounded-full border border-white/15 bg-white/5 p-3 text-primary">
->>>>>>> ad3887c (ui changes)
                     <MapPin className="h-5 w-5" strokeWidth={2.2} />
                   </span>
                   <div>
@@ -204,11 +176,7 @@ export default function ContactPage() {
                       href={siteContact.directionsHref}
                       target="_blank"
                       rel="noopener noreferrer"
-<<<<<<< HEAD
-                      className="mt-5 inline-flex text-sm font-black uppercase tracking-[0.14em] text-[#F7941E] transition hover:brightness-110"
-=======
                       className="mt-5 inline-flex text-sm font-black uppercase tracking-[0.14em] text-primary transition hover:brightness-110"
->>>>>>> ad3887c (ui changes)
                     >
                       Get Directions
                     </a>
@@ -218,11 +186,7 @@ export default function ContactPage() {
 
               <div className="rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)]">
                 <div className="flex items-start gap-3">
-<<<<<<< HEAD
-                  <span className="rounded-full border border-white/15 bg-white/5 p-3 text-[#F7941E]">
-=======
                   <span className="rounded-full border border-white/15 bg-white/5 p-3 text-primary">
->>>>>>> ad3887c (ui changes)
                     <Clock3 className="h-5 w-5" strokeWidth={2.2} />
                   </span>
                   <div className="w-full">

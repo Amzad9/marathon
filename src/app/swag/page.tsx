@@ -5,13 +5,8 @@ import PageShell from "../../components/PageShell";
 import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
-  title: "Swag | Turkey Trot",
-  description: "See what race-day swag you'll receive at Turkey Trot.",
-=======
   title: "Swag | Columbus Turkey Trot",
   description: "See what race-day swag you'll receive at the Columbus Turkey Trot.",
->>>>>>> ad3887c (ui changes)
 };
 
 const swagItems = [
