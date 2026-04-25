@@ -5,13 +5,8 @@ import PageShell from "../../components/PageShell";
 import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
-  title: "Our Beneficiary | Turkey Trot",
-  description: "Meet Easterseals of Central and Southeast Ohio, our beneficiary partner.",
-=======
   title: "Our Beneficiary | Columbus Turkey Trot",
   description: "Learn how the Columbus Turkey Trot supports Easterseals of Central & Southeast Ohio.",
->>>>>>> ad3887c (ui changes)
 };
 
 export default function OurBeneficiaryPage() {
@@ -20,16 +15,10 @@ export default function OurBeneficiaryPage() {
       activeLabel="Our Beneficiary"
       hero={{
         eyebrow: "Our Beneficiary",
-<<<<<<< HEAD
-        title: "Easterseals Central & Southeast Ohio",
-        subtitle: "Early Intervention support that helps children reach their full potential regardless of challenges, needs, or disabilities.",
-        imageUrl: "https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg",
-=======
         title: "Easterseals of Central & Southeast Ohio",
         subtitle: "Your registration supports programs that help children and families thrive through Early Intervention services.",
         imageUrl:
           unsplash("https://images.unsplash.com/photo-1461896836934-ffe607ba8211", { width: 2000, quality: 88 }),
->>>>>>> ad3887c (ui changes)
       }}
     >
      
@@ -43,24 +32,15 @@ export default function OurBeneficiaryPage() {
             <article className="rounded-2xl border border-white/15 bg-white/5 p-5">
               <h3 className="text-xl font-black uppercase text-white">Curriculum Delivery</h3>
               <p className="mt-2 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-<<<<<<< HEAD
-                Funds support hands-on Early Intervention services for children and their families.
-=======
                 Proceeds support hands-on services and resources for children and families served
                 through Early Intervention programs.
->>>>>>> ad3887c (ui changes)
               </p>
             </article>
             <article className="rounded-2xl border border-white/15 bg-white/5 p-5">
               <h3 className="text-xl font-black uppercase text-white">Local Impact</h3>
               <p className="mt-2 text-base leading-7 text-white/85 sm:text-lg sm:leading-8">
-<<<<<<< HEAD
-                Your support brings joy and hope to local children by expanding access to therapy and
-                developmental resources.
-=======
                 Your support helps provide comprehensive care so children can reach their full
                 potential, regardless of challenges, needs, or disabilities.
->>>>>>> ad3887c (ui changes)
               </p>
             </article>
           </div>
@@ -85,18 +65,6 @@ export default function OurBeneficiaryPage() {
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             {[
               {
-<<<<<<< HEAD
-                title: "Healthy Habits",
-                body: "Early support gives children a stronger start during critical developmental years.",
-              },
-              {
-                title: "Confidence & Joy",
-                body: "Families receive compassionate guidance, tools, and care through every stage.",
-              },
-              {
-                title: "Community Impact",
-                body: "Every registration helps strengthen Easterseals programs across Central and Southeast Ohio.",
-=======
                 title: "Early Intervention",
                 body: "Support services that help young children build skills and reach key developmental milestones.",
               },
@@ -107,7 +75,6 @@ export default function OurBeneficiaryPage() {
               {
                 title: "Stronger Community",
                 body: "Your race-day participation fuels local impact for children and families across Central Ohio.",
->>>>>>> ad3887c (ui changes)
               },
             ].map((item) => (
               <article

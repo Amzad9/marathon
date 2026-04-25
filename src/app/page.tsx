@@ -4,12 +4,7 @@ import { Star } from "lucide-react";
 
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
-<<<<<<< HEAD
-import blueshirtImage from "./assets/Blueshirt_edited.avif";
-import inflatableTurkeyImage from "./assets/InflatableTT.avif";
-=======
 import { unsplash } from "../lib/unsplash";
->>>>>>> ad3887c (ui changes)
 const testimonials = [
   {
     name: "Family Team",
@@ -54,19 +49,11 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="relative z-10 grid gap-6 lg:grid-cols-2 lg:items-center">
               <div className="max-w-7xl">
-<<<<<<< HEAD
-                <h1 className="text-4xl md:text-5xl font-black uppercase leading-[0.92] text-[#F7941E]">
-                  The Original Columbus Turkey Trot
-                </h1>
-              
-                <p className="mt-3 text-2xl font-semibold text-[#F7941E] sm:text-4xl">
-=======
                 <h1 className="text-4xl md:text-5xl font-black uppercase leading-[0.92] text-primary">
                   The Original Columbus Turkey Trot
                 </h1>
               
                 <p className="mt-3 text-2xl font-semibold text-primary sm:text-4xl">
->>>>>>> ad3887c (ui changes)
                   Thanksgiving Day | 11/27/2025
                 </p>
                 <p className="mt-5 max-w-4xl text-lg leading-9 text-white/95 sm:text-2xl sm:leading-[1.3]">
@@ -80,11 +67,7 @@ export default function Home() {
                     href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
                     target="_blank"
                     rel="noopener noreferrer"
-<<<<<<< HEAD
-                    className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-10 py-4 text-md md:text-xl font-black uppercase tracking-[0.05em] text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110"
-=======
                     className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-10 py-4 text-md md:text-xl font-black uppercase tracking-[0.05em] text-primary shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110"
->>>>>>> ad3887c (ui changes)
                   >
                     Click To Sign Up
                   </Link>
@@ -126,28 +109,16 @@ export default function Home() {
           <div className="container mx-auto grid gap-4 md:grid-cols-3">
             {[
               {
-<<<<<<< HEAD
-                title: "What&apos;s New In &apos;26",
-                body: "New out-and-back 4-mile route turning around in front of the historic Ohio State Horseshoe.",
-              },
-              {
-                title: "Walk N&apos; Talk Route",
-=======
                 title: "What's New In '26",
                 body: "New out-and-back 4-mile route turning around in front of the historic Ohio State Horseshoe.",
               },
               {
                 title: "Walk N' Talk Route",
->>>>>>> ad3887c (ui changes)
                 body: "A casual route for friends and families, including the OSU Waterman Agriculture and Natural Resource Complex.",
               },
               {
                 title: "Swag + Medal",
-<<<<<<< HEAD
-                body: "Check out this year&apos;s long sleeve 1/4 zip and custom finisher&apos;s medal.",
-=======
                 body: "Check out this year's long sleeve 1/4 zip and custom finisher's medal.",
->>>>>>> ad3887c (ui changes)
               },
             ].map((item) => (
               <article key={item.title} className="rounded-2xl border border-white/12 bg-white/5 p-4">
@@ -173,11 +144,7 @@ export default function Home() {
               />
             </div>
             <div>
-<<<<<<< HEAD
-              <h2 className="md:text-4xl font-black uppercase leading-none text-[#F7941E] text-2xl">
-=======
               <h2 className="md:text-4xl font-black uppercase leading-none text-primary text-2xl">
->>>>>>> ad3887c (ui changes)
                 Featured Event Details
               </h2>
               <ul className="mt-5 space-y-4 text-2xl leading-tight text-white/95 sm:text-2xl">
@@ -220,11 +187,7 @@ export default function Home() {
                     />
                   </div>
                   <div>
-<<<<<<< HEAD
-                    <div className="mb-2 flex items-center gap-1 text-[#F7941E]">
-=======
                     <div className="mb-2 flex items-center gap-1 text-primary">
->>>>>>> ad3887c (ui changes)
                       {Array.from({ length: 5 }).map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-current" />
                       ))}
@@ -238,59 +201,7 @@ export default function Home() {
             </div>
         </section>
 
-<<<<<<< HEAD
-        <section className="bg-[#1e252d] px-4 pb-8 sm:px-8">
-          <div className="container mx-auto">
-            <div className="grid gap-6 lg:grid-cols-2">
-              <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-black/20">
-                <Image
-                  src={blueshirtImage}
-                  alt="Race participant in event shirt"
-                  className="h-full w-full object-cover"
-                  priority={false}
-                />
-              </div>
-              <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-black/20">
-                <Image
-                  src={inflatableTurkeyImage}
-                  alt="Inflatable turkey at the event"
-                  className="h-full w-full object-cover"
-                  priority={false}
-                />
-              </div>
-            </div>
-
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                href="https://www.mapmyrun.com/routes/view/6668224116"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#F7941E] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
-              >
-                4-Mile Map
-              </a>
-              <a
-                href="https://www.mapmyrun.com/routes/view/add_to_website/6668240239"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:text-base"
-              >
-                2.5-Mile “Walk N’ Talk” Map
-              </a>
-              <a
-                href="https://www.facebook.com/ColumbusTurkeyTrot/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/10 sm:w-fit sm:text-base"
-              >
-                Click to Stay Up-To-Date
-              </a>
-            </div>
-          </div>
-        </section>
-=======
        
->>>>>>> ad3887c (ui changes)
 
         <section id="projects" className="mt-0 bg-[#1e252d] px-4 py-6 sm:px-8">
           <div className="container mx-auto grid gap-6 lg:grid-cols-[0.5fr_1fr]">
@@ -307,11 +218,7 @@ export default function Home() {
               />
             </div>
             <div>
-<<<<<<< HEAD
-                <h3 className="md:text-4xl font-black uppercase leading-none text-[#F7941E] text-2xl">
-=======
                 <h3 className="md:text-4xl font-black uppercase leading-none text-primary text-2xl">
->>>>>>> ad3887c (ui changes)
                 A Message From The Event Team
               </h3>
               <p className="mt-4 max-w-6xl text-xl leading-8 text-white/95 sm:text-2xl sm:leading-[1.3]">
@@ -333,11 +240,7 @@ export default function Home() {
                   href="https://www.columbusturkeytrot.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-<<<<<<< HEAD
-                  className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-xl font-black uppercase tracking-[0.05em] text-[#F7941E] transition hover:brightness-110"
-=======
                   className="inline-flex rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-xl font-black uppercase tracking-[0.05em] text-primary transition hover:brightness-110"
->>>>>>> ad3887c (ui changes)
                 >
                   Visit Event Website
                 </Link>
@@ -350,14 +253,10 @@ export default function Home() {
             <div className="flex flex-col gap-4 border-b border-white/15 py-8 sm:flex-row sm:items-center">
               <div className="relative h-28 w-28 overflow-hidden rounded-xl border border-white/20">
                 <Image
-<<<<<<< HEAD
-                  src="/new/Run-Like-a-Girl-04.avif"
-=======
                   src={unsplash("https://images.unsplash.com/photo-1520975682071-9c56fbc44749", {
                     width: 600,
                     quality: 88,
                   })}
->>>>>>> ad3887c (ui changes)
                   alt="Turkey Trot logo"
                   fill
                   className="object-cover"

@@ -33,18 +33,6 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
         <Link
           href="/"
           className="flex min-w-0 shrink-0 items-center"
-<<<<<<< HEAD
-          aria-label="Turkey Trot"
-        >
-          <div className="relative h-16 w-[120px] overflow-hidden rounded-md bg-transparent sm:h-20 sm:w-[210px] lg:w-[190px]">
-            <Image
-              src={turkeyTrotLogo}
-              alt="Turkey Trot logo"
-              fill
-              className="object-contain"
-              priority
-            />
-=======
           aria-label="Columbus Turkey Trot"
         >
           <div className="flex flex-col items-start">
@@ -60,7 +48,6 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
             <span className="mt-1 text-[11px] font-black uppercase tracking-[0.14em] text-white/90 sm:text-xs">
               Columbus Turkey Trot
             </span>
->>>>>>> ad3887c (ui changes)
           </div>
           {/* <div className="min-w-0">
             <h2 className="text-base font-black uppercase leading-none tracking-[0.04em] text-white sm:text-lg lg:text-xl">
@@ -89,13 +76,8 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
                   <Link
                     href={item.href}
                     className={[
-<<<<<<< HEAD
-                      "transition hover:text-[#F7941E]",
-                      isActive ? "text-[#F7941E]" : "",
-=======
                       "transition hover:text-primary",
                       isActive ? "text-primary" : "",
->>>>>>> ad3887c (ui changes)
                     ].join(" ")}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -154,13 +136,8 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
                     href={item.href}
                     onClick={closeMenu}
                     className={[
-<<<<<<< HEAD
-                      "block rounded-2xl border border-white/20 bg-white/5 px-4 py-4 transition hover:border-[#F7941E]/45 hover:text-[#F7941E]",
-                      isActive ? "border-[#F7941E]/55 text-[#F7941E]" : "",
-=======
                       "block rounded-2xl border border-white/20 bg-white/5 px-4 py-4 transition hover:border-primary/45 hover:text-primary",
                       isActive ? "border-primary/55 text-primary" : "",
->>>>>>> ad3887c (ui changes)
                     ].join(" ")}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -173,13 +150,9 @@ export default function SiteHeader({ activeLabel }: { activeLabel?: string }) {
               <Link
                 href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
                 onClick={closeMenu}
-<<<<<<< HEAD
-                className="block rounded-2xl border border-[#1f7f56] bg-[#1c9a64] px-4 py-4 text-[#F7941E] transition hover:brightness-110"
-=======
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block rounded-2xl border border-[#1f7f56] bg-[#1c9a64] px-4 py-4 text-[#f7d96f] transition hover:brightness-110"
->>>>>>> ad3887c (ui changes)
               >
                 Register Now
               </Link>

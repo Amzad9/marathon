@@ -38,11 +38,7 @@ export default function PageShell({ activeLabel, hero, children }: PageShellProp
                   </p>
                 ) : null}
 
-<<<<<<< HEAD
-                <h1 className="mt-5 text-4xl md:text-5xl font-black uppercase leading-[0.92] tracking-[-0.02em] text-[#F7941E]">
-=======
                 <h1 className="mt-5 text-4xl md:text-5xl font-black uppercase leading-[0.92] tracking-[-0.02em] text-primary">
->>>>>>> ad3887c (ui changes)
                   {hero.title}
                 </h1>
 

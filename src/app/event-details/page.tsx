@@ -6,41 +6,12 @@ import PageShell from "../../components/PageShell";
 import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
-<<<<<<< HEAD
-  title: "Event Details | Turkey Trot",
-  description: "Race details for the Turkey Trot Thanksgiving Day events.",
-=======
   title: "Event Details | Columbus Turkey Trot",
   description: "Race details for the Columbus Turkey Trot.",
->>>>>>> ad3887c (ui changes)
 };
 
 const distances = [
   {
-<<<<<<< HEAD
-    title: "4-Mile Race",
-    miles: "4 miles",
-    startTime: "9:00 AM",
-    body: "New out-and-back course turning around near the historic Ohio State University Horseshoe.",
-  },
-  {
-    title: "Walk N' Talk",
-    miles: "2.3 miles",
-    startTime: "9:15 AM",
-    body: "A casual route for walkers and families, including the OSU Waterman Agriculture and Natural Resource Complex.",
-  },
-  {
-    title: "Turkey Trot Tot Trot",
-    miles: "100 yards",
-    startTime: "8:30 AM",
-    body: "Fast and fun kids dash for participants ages 13 and under.",
-  },
-  {
-    title: "Turkey Trot Virtual Option",
-    miles: "Flexible",
-    startTime: "Thanksgiving Day",
-    body: "Complete your miles from anywhere and still be part of race-day impact.",
-=======
     title: "4-Mile Turkey Trot",
     miles: "4 miles",
     startTime: "8:30 AM",
@@ -51,7 +22,6 @@ const distances = [
     miles: "2.3 miles",
     startTime: "8:45 AM",
     body: "A casual option for friends and families to enjoy Thanksgiving morning together.",
->>>>>>> ad3887c (ui changes)
   },
 ];
 
@@ -95,11 +65,7 @@ export default function EventDetailsPage() {
       <section className="px-4 py-10 sm:px-8 sm:py-14">
         <div className="container mx-auto rounded-[24px] border border-white/15 bg-white/5 p-6 shadow-[0_18px_44px_rgba(0,0,0,0.25)] sm:p-8">
           <p className="text-base uppercase tracking-[0.08em] text-white/90 sm:text-xl">
-<<<<<<< HEAD
-            Starting line for all events - The Shops on Lane Avenue, Columbus
-=======
             Starting line - The Shops on Lane Avenue (1675 W. Lane Ave, Columbus, OH 43221)
->>>>>>> ad3887c (ui changes)
           </p>
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">
@@ -143,31 +109,19 @@ export default function EventDetailsPage() {
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <CalendarDays className="h-4 w-4" /> Date
               </p>
-<<<<<<< HEAD
-              <p className="mt-2 text-lg text-white">Thanksgiving Day 2026</p>
-=======
               <p className="mt-2 text-lg text-white">Thursday, November 27, 2025 (Thanksgiving Day)</p>
->>>>>>> ad3887c (ui changes)
             </div>
             <div className="rounded-2xl border border-white/15 bg-white/5 p-4">
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <MapPin className="h-4 w-4" /> Location
               </p>
-<<<<<<< HEAD
-              <p className="mt-2 text-lg text-white">The Shops on Lane Avenue, Columbus</p>
-=======
               <p className="mt-2 text-lg text-white">The Shops on Lane Avenue</p>
->>>>>>> ad3887c (ui changes)
             </div>
             <div className="rounded-2xl border border-white/15 bg-white/5 p-4">
               <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wider text-white/85">
                 <Trophy className="h-4 w-4" /> Start Time
               </p>
-<<<<<<< HEAD
-              <p className="mt-2 text-lg text-white">8:30 AM Tot Trot | 9:00 AM Main Race</p>
-=======
               <p className="mt-2 text-lg text-white">Start times begin at 8:30 AM</p>
->>>>>>> ad3887c (ui changes)
             </div>
           </div>
 
