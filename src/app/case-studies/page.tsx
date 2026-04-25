@@ -4,9 +4,14 @@ import { BadgeCheck, MapPin, ShieldCheck, Timer } from "lucide-react";
 
 import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
+import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Race Day | Turkey Trot",
+=======
+  title: "Race Day | Columbus Turkey Trot",
+>>>>>>> ad3887c (ui changes)
   description: "Race day guide: what to expect, where to park, and key tips for a smooth morning.",
 };
 
@@ -18,7 +23,11 @@ const faq = [
   },
   {
     title: "Where do I park?",
+<<<<<<< HEAD
     body: "Parking is available around The Shops on Lane Avenue. Follow event signage and volunteer direction.",
+=======
+    body: "Plan to arrive early and follow event parking directions near The Shops on Lane Avenue.",
+>>>>>>> ad3887c (ui changes)
     icon: <MapPin className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
@@ -48,7 +57,8 @@ export default function RaceDayPage() {
         ),
         subtitle:
           "Everything you need to know for a confident, calm race morning—from parking to packet pickup.",
-        imageUrl: "https://images.pexels.com/photos/3757376/pexels-photo-3757376.jpeg",
+        imageUrl:
+          unsplash("https://images.unsplash.com/photo-1461896836934-ffe607ba8211", { width: 2000, quality: 88 }),
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">
@@ -62,13 +72,20 @@ export default function RaceDayPage() {
                 <span className="font-black text-white">Packet pickup:</span> Advance pickup recommended (friends/family can pick up for you).
               </li>
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
+<<<<<<< HEAD
                 <span className="font-black text-white">Start time:</span> 8:30 AM Tot Trot | 9:00 AM Main Race.
               </li>
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
                 <span className="font-black text-white">Location:</span> The Shops on Lane Avenue, Columbus.
+=======
+                <span className="font-black text-white">Start time:</span> Start times begin at 8:30 am on Thursday, November 27, 2025.
               </li>
               <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
-                <span className="font-black text-white">Parking:</span> Sports Complex + overflow across the street.
+                <span className="font-black text-white">Location:</span> The Shops on Lane Avenue.
+>>>>>>> ad3887c (ui changes)
+              </li>
+              <li className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4">
+                <span className="font-black text-white">Parking:</span> Arrive early and follow event signage and staff directions.
               </li>
             </ul>
 

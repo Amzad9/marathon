@@ -2,12 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import PageShell from "../../components/PageShell";
+<<<<<<< HEAD
 import { siteContact } from "../../components/siteConfig";
 
 export const metadata: Metadata = {
   title: "Our Sponsors | Columbus Turkey Trot",
   description:
     "Meet the official sponsors supporting the Columbus Turkey Trot and our community partners.",
+=======
+import { unsplash } from "../../lib/unsplash";
+
+export const metadata: Metadata = {
+  title: "Sponsors | Columbus Turkey Trot",
+  description:
+    "Meet the sponsors supporting the Columbus Turkey Trot and learn how to sponsor the event.",
+>>>>>>> ad3887c (ui changes)
 };
 
 type Sponsor = {
@@ -89,9 +98,15 @@ function SponsorCard({
               />
             </div>
           ) : (
+<<<<<<< HEAD
             <div className="grid h-32 place-items-center rounded-2xl border border-dashed border-black/20 bg-black/5">
               <p className="text-sm font-semibold text-black/60">Logo coming soon</p>
             </div>
+=======
+            <p className="mt-3 max-w-xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8">
+              Thank you for supporting the Columbus Turkey Trot.
+            </p>
+>>>>>>> ad3887c (ui changes)
           )}
         </div>
       </div>
@@ -113,7 +128,7 @@ export default function SponsorsPage() {
         subtitle:
           "We are proud to partner with these organizations that help make Thanksgiving Day race morning possible.",
         imageUrl:
-          "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1800&q=80",
+          unsplash("https://images.unsplash.com/photo-1552674605-db6ffd4facb5", { width: 2000, quality: 88 }),
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">

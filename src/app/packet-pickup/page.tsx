@@ -4,8 +4,10 @@ import { CalendarDays, Clock3, MapPin, ShieldCheck } from "lucide-react";
 
 import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
+import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Packet Pickup | Turkey Trot",
   description: "Packet pickup times and race-day pickup details for Turkey Trot.",
 };
@@ -14,12 +16,24 @@ const pickupDates = [
   "Monday, Nov 17 - Wednesday, Nov 26 | Columbus Running Company",
   "Tuesday, Nov 18 and Tuesday, Nov 25 | Chase Bank (4:00 PM - 6:00 PM)",
   "Sunday, Nov 23 (one day only) | The Shops on Lane (Noon - 3:00 PM)",
+=======
+  title: "Packet Pickup | Columbus Turkey Trot",
+  description: "Packet pickup times and race-day pickup details for the Columbus Turkey Trot.",
+};
+
+const pickupDates = [
+  "Thanksgiving Day (Thursday, Nov 27, 2025) | Race-morning pickup available",
+>>>>>>> ad3887c (ui changes)
 ];
 
 const checklistItems = [
   "Photo ID (recommended for faster check-in)",
   "Registration confirmation email on your phone",
+<<<<<<< HEAD
   "Runner name and event distance (4-Mile, Walk N' Talk, or Tot Trot)",
+=======
+  "Runner name and event option (4-Mile or Walk N' Talk)",
+>>>>>>> ad3887c (ui changes)
   "Comfortable timing to avoid race-morning lines",
 ];
 
@@ -61,7 +75,7 @@ export default function PacketPickupPage() {
         title: "Pick Up Early, Race Smoothly",
         subtitle: "Use one of our pickup windows to save time and start race morning stress-free.",
         imageUrl:
-          "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1800&q=80",
+          unsplash("https://images.unsplash.com/photo-1552674605-db6ffd4facb5", { width: 2000, quality: 88 }),
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">
@@ -86,7 +100,11 @@ export default function PacketPickupPage() {
             <h3 className="text-xl font-black uppercase tracking-tight text-white">Quick Notes</h3>
             <div className="mt-5 space-y-4 text-white/90">
               <p className="flex items-center gap-2">
+<<<<<<< HEAD
                 <MapPin className="h-4 w-4 text-[#F7941E]" /> The Shops on Lane Avenue
+=======
+                <MapPin className="h-4 w-4 text-[#f3d27d]" /> The Shops on Lane Avenue
+>>>>>>> ad3887c (ui changes)
               </p>
               <p className="flex items-center gap-2">
                 <Clock3 className="h-4 w-4 text-[#F7941E]" /> Race-day pickup opens early Thanksgiving morning
@@ -113,6 +131,7 @@ export default function PacketPickupPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-[#F7941E] sm:text-4xl">
               Additional Packet Pickup Locations
             </h2>
+<<<<<<< HEAD
             <div className="mt-6 grid gap-4">
               {additionalPickupLocations.map((location) => (
                 <article
@@ -134,6 +153,19 @@ export default function PacketPickupPage() {
               ))}
             </div>
             <div className="mt-5">
+=======
+            <p className="mt-4 text-base leading-7 text-white/90 sm:text-lg sm:leading-8">
+              Packet pickup is available on race morning. Plan to arrive a little early so you can
+              park, check in, and be ready before start times begin.
+            </p>
+            <div className="mt-5 grid gap-3">
+              <div className="rounded-2xl border border-white/15 bg-white/5 px-5 py-4 text-white/90">
+                <p className="flex items-center gap-2 font-semibold">
+                  <MapPin className="h-4 w-4 text-[#f3d27d]" />
+                  {siteContact.addressLines.join(" ")}
+                </p>
+              </div>
+>>>>>>> ad3887c (ui changes)
               <a
                 href={siteContact.directionsHref}
                 target="_blank"
@@ -209,6 +241,7 @@ export default function PacketPickupPage() {
             </p>
           </div>
 
+<<<<<<< HEAD
           <div className="mt-8 grid gap-6 lg:grid-cols-12">
             <div className="lg:col-span-5 rounded-[24px] border border-white/15 bg-[#1e252d] p-6 shadow-[0_18px_44px_rgba(0,0,0,0.35)] sm:p-8">
               <h3 className="text-xl font-black uppercase tracking-tight text-white">What To Bring</h3>
@@ -242,6 +275,23 @@ export default function PacketPickupPage() {
                 </Link>
               </div>
             </div>
+=======
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="https://runsignup.com/Race/OH/Columbus/ColumbusTurkeyTrot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-[#1f7f56] bg-[#1c9a64] px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-[#f7d96f] shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:brightness-110 sm:w-fit sm:text-base"
+            >
+              Click Here To Register
+            </Link>
+            <Link
+              href="/questions"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3 text-center text-sm font-black uppercase tracking-wide text-white transition hover:bg-white/15 sm:w-fit sm:text-base"
+            >
+              Ask A Question
+            </Link>
+>>>>>>> ad3887c (ui changes)
           </div>
         </div>
       </section>

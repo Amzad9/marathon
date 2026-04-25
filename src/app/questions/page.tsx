@@ -4,9 +4,14 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 
 import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
+import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Questions | Turkey Trot",
+=======
+  title: "Questions | Columbus Turkey Trot",
+>>>>>>> ad3887c (ui changes)
   description: "Get answers for registration, packet pickup, and race-day questions.",
 };
 
@@ -21,6 +26,7 @@ const faq = [
   },
   {
     question: "What time does the race start?",
+<<<<<<< HEAD
     answer: "Tot Trot starts at 8:30 AM, the main race starts at 9:00 AM, and Walk N' Talk starts at 9:15 AM on Thanksgiving Day.",
   },
   {
@@ -30,6 +36,9 @@ const faq = [
   {
     question: "How can I become a vendor or sponsor?",
     answer: "Contact David Phillips at dphillips@easterseals-cseohio.org for vendor and sponsorship opportunities.",
+=======
+    answer: "Start times begin at 8:30 AM on Thanksgiving Day (Thursday, November 27, 2025).",
+>>>>>>> ad3887c (ui changes)
   },
 ];
 
@@ -41,7 +50,8 @@ export default function QuestionsPage() {
         eyebrow: "Questions",
         title: "We're Here To Help",
         subtitle: "Need help with registration, packet pickup, or race-day details? Reach out anytime.",
-        imageUrl: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+        imageUrl:
+          unsplash("https://images.unsplash.com/photo-1461896836934-ffe607ba8211", { width: 2000, quality: 88 }),
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">
