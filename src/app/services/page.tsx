@@ -4,8 +4,10 @@ import { ArrowRight, BriefcaseBusiness, CalendarDays, ClipboardList } from "luci
 
 import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
+import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Events | Turkey Trot",
   description: "Explore race distances, event details, and race day information.",
 };
@@ -14,6 +16,16 @@ const proposalPoints = [
   "40th Anniversary updates for the 2026 Chase Columbus Turkey Trot",
   "New out-and-back 4-mile route near the historic OSU Horseshoe",
   "Proceeds benefit Easterseals of Central and Southeast Ohio",
+=======
+  title: "Event Details | Columbus Turkey Trot",
+  description: "Explore race options, event details, and race-day information.",
+};
+
+const proposalPoints = [
+  "4-mile out-and-back route with a turnaround near the OSU Horseshoe",
+  "Walk N' Talk route for casual runners and walkers",
+  "Benefiting Easterseals of Central & Southeast Ohio",
+>>>>>>> ad3887c (ui changes)
 ];
 
 export default function ServicesPage() {
@@ -22,18 +34,31 @@ export default function ServicesPage() {
       activeLabel="Event Details"
       hero={{
         eyebrow: "Event Details",
+<<<<<<< HEAD
         title: "Race Distances",
         subtitle: "Choose from a 4-Mile Race, 2.3-Mile Walk N' Talk, Tot Trot, or the virtual option.",
         imageUrl: "https://images.pexels.com/photos/3755440/pexels-photo-3755440.jpeg",
+=======
+        title: "Race Options",
+        subtitle: "Choose the 4-Mile or the Walk N' Talk route and start Thanksgiving with the Columbus Turkey Trot.",
+        imageUrl:
+          unsplash("https://images.unsplash.com/photo-1461896836934-ffe607ba8211", { width: 2000, quality: 88 }),
+>>>>>>> ad3887c (ui changes)
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">
           <div className="container mx-auto">
             <div className="grid gap-6 md:grid-cols-3">
               {[
+<<<<<<< HEAD
                 { title: "4-Mile", body: "New out-and-back route with a turnaround near the OSU Horseshoe." },
                 { title: "Walk N' Talk", body: "2.3-mile casual route ideal for families and friends." },
                 { title: "Tot Trot", body: "Fun kids race for ages 13 and under." },
+=======
+                { title: "4-Mile", body: "Our signature out-and-back course with an iconic turnaround near the OSU Horseshoe." },
+                { title: "Walk N' Talk", body: "A relaxed option for friends and families to enjoy Thanksgiving morning together." },
+                { title: "Community", body: "A festive start to the holiday supporting Easterseals programs for local families." },
+>>>>>>> ad3887c (ui changes)
               ].map((item) => (
                 <article
                   key={item.title}
@@ -115,10 +140,17 @@ export default function ServicesPage() {
                     Advanced packet pickup runs Monday, Nov 17 through Wednesday, Nov 26 at Columbus Running Company.
                   </p>
                   <p>
+<<<<<<< HEAD
                     Additional pickup locations: Chase Bank (Nov 18 and Nov 25, 4-6pm) and The Shops on Lane (Nov 23, Noon-3pm).
                   </p>
                   <p>
                     Vendors and sponsors can contact David Phillips at dphillips@easterseals-cseohio.org.
+=======
+                    Start times begin at 8:30 am on Thanksgiving Day (Thursday, November 27, 2025).
+                  </p>
+                  <p>
+                    Please, no dogs allowed as a courtesy to other participants.
+>>>>>>> ad3887c (ui changes)
                   </p>
                 </div>
               </div>

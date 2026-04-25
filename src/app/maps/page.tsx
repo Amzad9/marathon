@@ -4,26 +4,44 @@ import { Car, Clock3, MapPin, ParkingCircle } from "lucide-react";
 
 import PageShell from "../../components/PageShell";
 import { siteContact } from "../../components/siteConfig";
+import { unsplash } from "../../lib/unsplash";
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Maps | Turkey Trot",
   description: "Directions and parking details for Turkey Trot in Columbus, Ohio.",
+=======
+  title: "Maps | Columbus Turkey Trot",
+  description: "Directions and parking details for the Columbus Turkey Trot in Columbus, Ohio.",
+>>>>>>> ad3887c (ui changes)
 };
 
 const tips = [
   {
     title: "Primary Parking",
+<<<<<<< HEAD
     body: "Use event-day parking around The Shops on Lane Avenue and follow lot signage.",
+=======
+    body: "Arrive early and follow event signage and volunteers for parking near Lane Avenue.",
+>>>>>>> ad3887c (ui changes)
     icon: <ParkingCircle className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
     title: "Arrive Early",
+<<<<<<< HEAD
     body: "Give yourself time to park, warm up, and find your start area before race start.",
+=======
+    body: "Give yourself time to park, warm up, and find your start area before start times begin at 8:30 am.",
+>>>>>>> ad3887c (ui changes)
     icon: <Clock3 className="h-5 w-5" strokeWidth={2.2} />,
   },
   {
     title: "Be Road-Ready",
+<<<<<<< HEAD
     body: "Follow event signage and volunteers on site for safe traffic and pedestrian flow.",
+=======
+    body: "Follow event signage and volunteers on site for the smoothest arrival.",
+>>>>>>> ad3887c (ui changes)
     icon: <Car className="h-5 w-5" strokeWidth={2.2} />,
   },
 ];
@@ -42,8 +60,14 @@ export default function MapsPage() {
           </>
         ),
         subtitle:
+<<<<<<< HEAD
           "Use the map below for directions to The Shops on Lane Avenue, plus quick notes for parking and arrival.",
         imageUrl: "https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg",
+=======
+          "Use the map below for directions, plus quick notes for parking and arrival.",
+        imageUrl:
+          unsplash("https://images.unsplash.com/photo-1461896836934-ffe607ba8211", { width: 2000, quality: 88 }),
+>>>>>>> ad3887c (ui changes)
       }}
     >
       <section className="px-4 py-10 sm:px-8 sm:py-14">

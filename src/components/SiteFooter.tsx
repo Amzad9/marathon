@@ -43,7 +43,11 @@ export default function SiteFooter() {
             <ul className="mt-2 space-y-1 text-lg font-medium capitalize text-[#d7dee2] sm:text-md">
               {siteNav.map((item) => (
                 <li key={item.href}>
+<<<<<<< HEAD
                   <Link href={item.href} className="transition hover:text-[#F7941E]">
+=======
+                  <Link href={item.href} className="transition hover:text-primary">
+>>>>>>> ad3887c (ui changes)
                     {item.label}
                   </Link>
                 </li>
@@ -81,13 +85,21 @@ export default function SiteFooter() {
             <h4 className="text-xl font-black uppercase text-white">Contact</h4>
             <a
               href={`mailto:${siteContact.emailShowroom}`}
+<<<<<<< HEAD
               className="mt-3 block text-lg text-[#d7dee2] transition hover:text-[#F7941E] sm:text-xl"
+=======
+              className="mt-3 block text-lg text-[#d7dee2] transition hover:text-primary sm:text-xl"
+>>>>>>> ad3887c (ui changes)
             >
               {siteContact.emailShowroom}
             </a>
             <a
               href={siteContact.phoneHref}
+<<<<<<< HEAD
               className="mt-2 block text-lg text-[#d7dee2] transition hover:text-[#F7941E] sm:text-xl"
+=======
+              className="mt-2 block text-lg text-[#d7dee2] transition hover:text-primary sm:text-xl"
+>>>>>>> ad3887c (ui changes)
             >
               {siteContact.phone}
             </a>
@@ -96,7 +108,23 @@ export default function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10 bg-[#131920] py-4 text-center text-sm font-semibold text-[#c7d1d6]">
+<<<<<<< HEAD
         &copy; {new Date().getFullYear()} Turkey Trot. All rights reserved.
+=======
+        <p>&copy; {new Date().getFullYear()} Turkey Trot. All rights reserved.</p>
+        <p className="mt-1 text-xs font-semibold text-[#9fb0b8]">
+          Photos via{" "}
+          <a
+            href="https://unsplash.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-primary"
+          >
+            Unsplash
+          </a>
+          .
+        </p>
+>>>>>>> ad3887c (ui changes)
       </div>
     </footer>
   );

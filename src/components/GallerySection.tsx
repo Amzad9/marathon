@@ -10,29 +10,49 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import { unsplash } from "../lib/unsplash";
+
 const galleryImages = [
   {
-    src: "/gallary/gal1.webp",
+    src: unsplash("https://images.unsplash.com/photo-1521412644187-c49fa049e84d", {
+      width: 1800,
+      quality: 88,
+    }),
     alt: "Atlas Pool Solutions gallery image of a renovated commercial pool",
   },
   {
-    src: "/gallary/gal2.webp",
+    src: unsplash("https://images.unsplash.com/photo-1517649763962-0c623066013b", {
+      width: 1800,
+      quality: 88,
+    }),
     alt: "Atlas Pool Solutions gallery image of a pool deck and finish upgrade",
   },
   {
-    src: "/gallary/gal3.webp",
+    src: unsplash("https://images.unsplash.com/photo-1502904550040-7534597429ae", {
+      width: 1800,
+      quality: 88,
+    }),
     alt: "Atlas Pool Solutions gallery image of a pool renovation detail",
   },
   {
-    src: "/gallary/gal4.webp",
+    src: unsplash("https://images.unsplash.com/photo-1520975682071-9c56fbc44749", {
+      width: 1800,
+      quality: 88,
+    }),
     alt: "Atlas Pool Solutions gallery image of a modern pool amenity",
   },
   {
-    src: "/gallary/gal5.webp",
+    src: unsplash("https://images.unsplash.com/photo-1547347298-4074fc3086f0", {
+      width: 1800,
+      quality: 88,
+    }),
     alt: "Atlas Pool Solutions gallery image of an upgraded poolside environment",
   },
   {
-    src: "/gallary/gal6.webp",
+    src: unsplash("https://images.unsplash.com/photo-1526676037777-05a232554f77", {
+      width: 1800,
+      quality: 88,
+    }),
     alt: "Atlas Pool Solutions gallery image of a completed pool improvement project",
   },
 ];
@@ -97,7 +117,13 @@ export default function GallerySection({
               <SwiperSlide key={image.src}>
                 <article className="overflow-hidden rounded-[22px] border border-white/10 bg-[#202831] shadow-[0_12px_28px_rgba(0,0,0,0.28)]">
                   <div className="relative h-72">
-                    <Image src={image.src} alt={image.alt} fill className="object-cover" />
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
                     <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
                   </div>
                 </article>
